@@ -48,37 +48,6 @@ This project implements a complete CRUD system for managing animal shelter data,
 - Generate statistics about animal shelter data, such as breed distribution and average age
 - Visualize animal locations on an interactive map
 
-## Getting Started
-To set up the Animal Shelter Dashboard project:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/animalshelter
-   cd animalshelter
-
-<!-- EXAMPLES OF USAGE: Examples showing how to use the project -->
-from animalShelter import AnimalShelter
-
-# Initialize the AnimalShelter object
-shelter = AnimalShelter(username='aacuser', password='aacuser')
-
-# Create a new animal record
-data = {
-    'animal_type': 'Dog',
-    'breed': 'Labrador Retriever',
-    'age_upon_outcome_in_weeks': 30,
-}
-shelter.create(data)
-
-# Read animal records
-animals = shelter.read(criteria={'animal_type': 'Dog'})
-
-# Update an animal record
-shelter.update(criteria={'breed': 'Labrador Retriever'}, update_data={'age_upon_outcome_in_weeks': 31})
-
-# Delete an animal record
-shelter.delete(criteria={'animal_type': 'Dog', 'breed': 'Labrador Retriever'})
-
 <!-- CONTRIBUTING: Guidelines for contributing to the project -->
 ## Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
